@@ -4,8 +4,8 @@ import { Button } from 'antd'
 import { Link } from 'react-router-dom';
 
 class thisContext extends BaseContext {
-    // displayName = 'app';
-    defaultPrivateName = 'app'
+    // displayName = 'app3';
+    defaultPrivateName = 'app3'
     
     constructor ( props ) {
         super ( props )
