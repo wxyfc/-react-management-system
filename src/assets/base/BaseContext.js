@@ -4,7 +4,7 @@ class BaseContext extends React.Component {
     
     constructor ( props ) {
         super ( props )
-        this.$log ( 'constructor' );
+        // this.$log ( 'constructor' );
     }
     
     state = {}

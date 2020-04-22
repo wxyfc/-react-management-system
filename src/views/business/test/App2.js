@@ -4,12 +4,12 @@ import { Button } from 'antd'
 import { Link } from 'react-router-dom';
 
 class thisContext extends BaseContext {
-    // displayName = 'app3';
-    defaultPrivateName = 'app3'
+    // displayName = 'app';
+    defaultPrivateName = 'app2'
     
     constructor ( props ) {
         super ( props )
-        console.log ( "app3" )
+        console.log ( "app2" )
         super.post ( 1 , 2 , 3 , 4 )
     }
     
@@ -22,9 +22,9 @@ class thisContext extends BaseContext {
         
         return (
             <>
-                <Button type="primary" onClick={ this.domClick }>触发事件33333</Button>
+                <Button type="primary" onClick={ ( e ) => this.domClick ( e ) }>触发事件11111</Button>
                 <Link to="/App">App</Link>
-                <Link to="/App2">App2</Link>
+                <Link to="/App3">App3</Link>
             </>
         )
     }
@@ -46,7 +46,7 @@ class thisContext extends BaseContext {
     componentDidUpdate () { // 在组件完成渲染后
     }
     
-    domClick = ( e ) => {
+    domClick ( e ) {
         e.persist ();
         this.$log ( e );
     }

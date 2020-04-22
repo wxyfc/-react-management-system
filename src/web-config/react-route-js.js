@@ -1,6 +1,6 @@
 //eslint disable next line
 //引入路由配置的json文件
-import AsyncComponent from "@/AsyncComponent";
+import AsyncComponent from "@/assets/base/AsyncComponent";
 //将class形式的组件用AsyncComponent转换成可给其他属性赋值的组件形式
 let routesJSON = require ( "@/web-config/routes.json" );
 
