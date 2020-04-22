@@ -41,8 +41,11 @@ body {
         grid-column-end: 7;
         grid-row-start: 3;
         grid-row-end: 9;
+        position: relative;
         .carusel-div {
-          margin-left: 20%;
+          position: absolute;
+          right: 0;
+          // margin-left: 20%;
           width: 80%;
           height: 100%;
           .ant-carousel {
