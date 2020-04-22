@@ -9,6 +9,7 @@ function recuFor ( list ) {
     let rl = [];
     list.forEach ( le => {
         let childRoutes = [];
+        // Object的hasOwnProperty()方法返回一个布尔值，判断对象是否包含特定的自身（非继承）属性。
         if ( le.hasOwnProperty ( "childRoutes" ) && le.childRoutes.length > 0 ) {
             childRoutes = recuFor ( le.childRoutes );
         }
