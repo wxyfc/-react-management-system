@@ -1,7 +1,12 @@
-import React from 'react'
-import BaseContext from '@/BaseContext'
-import { Button } from 'antd'
-import { Link } from 'react-router-dom';
+import React from 'react';
+import BaseContext from '@/assets/base/BaseContext';
+import { BrowserRouter , Route , Switch , Redirect , Link } from "react-router-dom";
+import { createBrowserHistory } from 'history';
+import Menus from './Menus';
+import Routes from './Routes';
+import { Layout } from 'antd';
+
+const { Header , Content , Footer , Sider } = Layout;
 
 class thisContext extends BaseContext {
     // displayName = 'app';
@@ -9,22 +14,36 @@ class thisContext extends BaseContext {
     
     constructor ( props ) {
         super ( props )
-        super.post ( 1 , 2 , 3 , 4 )
+        let pathname = "/App2"
+        let state = props.location.state
+        if ( state && state.rootFromPathname != "/" ) {
+            pathname = state.rootFromPathname
+        }
+        // this.state = {
+        //     pathname
+        // }
+        const history = createBrowserHistory ();
+        history.push ( { pathname } );
     }
     
     state = {}
     
     UNSAFE_componentWillMount () {
+        // console.log ( "app开始渲染" )
     }
     
     render () {
-        
         return (
-            <>
-                <Button type="primary" onClick={ ( e ) => this.domClick ( e ) }>触发事件</Button>
-                <Link to="/App2">App2</Link>
-                <Link to="/App3">App3</Link>
-            </>
+            <BrowserRouter>
+                <Layout>
+                    <Sider> <Menus/> </Sider>
+                    <Layout>
+                        <Content>
+                            <Routes/>
+                        </Content>
+                    </Layout>
+                </Layout>
+            </BrowserRouter>
         )
     }
     
@@ -43,11 +62,6 @@ class thisContext extends BaseContext {
     }
     
     componentDidUpdate () { // 在组件完成渲染后
-    }
-    
-    domClick ( e ) {
-        e.persist ();
-        this.$log ( e );
     }
     
     componentWillUnmount () { // 组件的卸载

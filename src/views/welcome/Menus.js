@@ -1,34 +1,37 @@
 import React from 'react'
-import BaseContext from '@/BaseContext'
+import { Link } from "react-router-dom";
+import BaseContext from '@/assets/base/BaseContext';
+import { Button , Layout , Menu , Breadcrumb } from 'antd';
+import routes from '@/web-config/react-route-js';
+
+const { SubMenu } = Menu;
 
 class thisContext extends BaseContext {
     // displayName = 'new';
-    defaultPrivateName = 'new'
+    defaultPrivateName = 'Menus'
     
     constructor ( props ) {
         super ( props )
-        super.post ( 1 , 2 , 3 , 4 )
-    }
-    
-    state = {
-        name : "yun"
     }
     
     UNSAFE_componentWillMount () {
-        this.$log ( 'render前执行' );
+        // this.$log ( 'Menus=render前执行' );
     }
     
     render () {
-        this.$log ( 'render 方法' )
+        // this.$log ( 'Menus=render 方法' )
         return (
-            <div>
-                <button onClick={ ( e ) => this.domClick ( e ) }>触发事件</button>
-            </div>
+            <Menu>
+                <SubMenu key="sub4" title="title">
+                    <Menu.Item key="7"><Link to="/App2">App2</Link></Menu.Item>
+                    <Menu.Item key="8"><Link to="/App3">App3</Link></Menu.Item>
+                </SubMenu>
+            </Menu>
         )
     }
     
     componentDidMount () {
-        this.$log ( '第一次render后执行||this.getDOMNode()' )
+        // this.$log ( 'Menus=第一次render后执行||this.getDOMNode()' )
     }
     
     UNSAFE_componentWillReceiveProps () {
@@ -47,13 +50,6 @@ class thisContext extends BaseContext {
     
     componentDidUpdate () { // 在组件完成渲染后
         this.$log ( '在组件完成更新后立即调用' );
-    }
-    
-    domClick ( e ) {
-        e.persist ();
-        this.setState ( {
-            name : 'yun'
-        } )
     }
     
     componentWillUnmount () { // 组件的卸载

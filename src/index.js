@@ -1,22 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '@/index.css';
-import '@/myReactPrototype';
+import 'antd/dist/antd.css';
+import '@/assets/style/index.scss';
+import '@/web-config/myReactPrototype';
+// import PropTypes from "prop-types";
+import { BrowserRouter , Route , Switch , Redirect , withRouter } from "react-router-dom";
+import App from '@/views/welcome/App'
+import Login from '@/views/welcome/Login'
 
-import { BrowserRouter , Route , Switch , Redirect } from "react-router-dom";
-import routes from '@/react-route-js';
+// import routes from '@/web-config/react-route-js';
 
-let ROOT = [];
-const routesForEach = item => {
-    if ( item.hasOwnProperty ( "childRoutes" ) && item.childRoutes.length > 0 ) {
-        item.childRoutes.forEach ( routesForEach );
-    }
-    pushROOT ( item );
-}
-const pushROOT = item => {
-    ROOT.push ( <Route path={ item.path } name={ item.name } component={ item.component } key={ item.name }/> )
-}
-routes.forEach ( routesForEach );
+// let ROOT = [];
+// const routesForEach = item => {
+//     if ( item.hasOwnProperty ( "childRoutes" ) && item.childRoutes.length > 0 ) {
+//         item.childRoutes.forEach ( routesForEach );
+//     }
+//     pushROOT ( item );
+// }
+// const pushROOT = item => {
+//     ROOT.push ( <Route path={ item.path } name={ item.name } component={ item.component } key={ item.name }/> )
+// }
+// routes.forEach ( routesForEach );
 // import * as serviceWorker from './serviceWorker';
 
 //BrowserRouter  目前我理解为跟vue中router-view一样的组件 routes则是配置
@@ -25,10 +29,13 @@ routes.forEach ( routesForEach );
 ReactDOM.render (
     <BrowserRouter>
         <Switch>
-            <Redirect exact to="/App" from='/'/>
-            { ROOT }
+            <Route exact path="/App" name="App" component={ App } key="App"/>
+            <Route exact path="/Login" name="Login" component={ Login } key="Login"/>
+            <Redirect exact to={ { pathname : "/App" , state : { rootFromPathname : window.location.pathname } } } from='/*'/>
+            { /*{ ROOT }*/ }
         </Switch>
-    </BrowserRouter> , document.getElementById ( 'root' ) );
+    </BrowserRouter>
+    , document.getElementById ( 'root' ) );
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

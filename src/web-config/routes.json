@@ -1,8 +1,8 @@
 [
   {
-    "path" : "/App" ,
-    "name" : "App" ,
-    "component" : "welcome/App" ,
+    "path" : "/App2" ,
+    "name" : "App2" ,
+    "component" : "test/App2" ,
     "meta" : {
       "icon" : "el-icon-sugar" ,
       "intercept" : true ,
@@ -12,7 +12,7 @@
       {
         "path" : "/App2" ,
         "name" : "App2" ,
-        "component" : "welcome/App2" ,
+        "component" : "test/App2" ,
         "meta" : {
           "icon" : "el-icon-sugar" ,
           "intercept" : true ,
