@@ -1,5 +1,6 @@
 import React from 'react'
 import BaseContext from '@/assets/base/BaseContext'
+import { Carousel } from 'antd';
 
 class thisContext extends BaseContext {
     // displayName = 'new';
@@ -20,9 +21,34 @@ class thisContext extends BaseContext {
     render () {
         // this.$log ( 'render 方法' )2
         return (
-            <div className="login">
-                <button onClick={ this.domClick }>{ this.state.name }</button>
-            </div>
+            <React.Fragment>
+                <div className="login">
+                    <div className="login-item-1"></div>
+                    <div className="login-item-2">
+                        <div className="carusel-div">
+                            <Carousel afterChange={ this.carouselOnChange }>
+                                <div>
+                                    <h3>1</h3>
+                                </div>
+                                <div>
+                                    <h3>2</h3>
+                                </div>
+                                <div>
+                                    <h3>3</h3>
+                                </div>
+                                <div>
+                                    <h3>4</h3>
+                                </div>
+                            </Carousel>
+                        </div>
+                    </div>
+                    <div className="login-item-3">
+                        <button onClick={ this.domClick }>{ this.state.name }</button>
+                    </div>
+                    <div className="login-item-4"></div>
+                    <div className="login-item-5"></div>
+                </div>
+            </React.Fragment>
         )
     }
     
@@ -48,6 +74,8 @@ class thisContext extends BaseContext {
         // this.$log ( '在组件完成更新后立即调用' );6
     }
     
+    carouselOnChange = () => {
+    }
     domClick = ( e ) => {
         // e.persist ();
         this.setState ( {

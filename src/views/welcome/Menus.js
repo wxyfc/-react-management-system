@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import BaseContext from '@/assets/base/BaseContext';
 import { Button , Layout , Menu , Breadcrumb } from 'antd';
-import routes from '@/web-config/react-route-js';
 
 const { SubMenu } = Menu;
 

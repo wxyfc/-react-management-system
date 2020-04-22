@@ -2,29 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23737993-5e8c-4079-82da-c24ed5bad14b" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/style/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/welcome/404.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/welcome/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/welcome/Menus.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/welcome/Routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpackDevServer.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpackDevServer.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/start.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/start.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AsyncComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/base/AsyncComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BaseContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/base/BaseContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/New.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/element/New.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myReactPrototype.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/web-config/myReactPrototype.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/react-route-js.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/web-config/react-route-js.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/business/test/App3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/business/test/App3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/style/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/style/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/welcome/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/welcome/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/welcome/App2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/business/test/App2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/web-config/routes.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/web-config/routes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/welcome/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/welcome/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/welcome/Menus.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/welcome/Menus.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/web-config/react-route-js.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/web-config/react-route-js.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -147,9 +129,10 @@
           <entry key="css" value="4" />
           <entry key="html" value="1" />
           <entry key="ico" value="1" />
-          <entry key="js" value="62" />
+          <entry key="js" value="72" />
           <entry key="json" value="6" />
           <entry key="less" value="1" />
+          <entry key="scss" value="1" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
@@ -159,20 +142,22 @@
           <entry key="HTML" value="1" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="6" />
-          <entry key="JavaScript" value="62" />
+          <entry key="JavaScript" value="72" />
           <entry key="Less" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
+          <entry key="SCSS" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="13" />
           <entry key="html" value="7" />
-          <entry key="js" value="1286" />
+          <entry key="js" value="1512" />
           <entry key="json" value="6" />
           <entry key="less" value="7" />
           <entry key="sass" value="27" />
-          <entry key="scss" value="58" />
+          <entry key="scss" value="452" />
+          <entry key="txt" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -180,9 +165,10 @@
           <entry key="CSS" value="13" />
           <entry key="HTML" value="7" />
           <entry key="JSON" value="6" />
-          <entry key="JavaScript" value="1286" />
+          <entry key="JavaScript" value="1512" />
           <entry key="Less" value="7" />
-          <entry key="SCSS" value="58" />
+          <entry key="PLAIN_TEXT" value="14" />
+          <entry key="SCSS" value="452" />
           <entry key="Sass" value="27" />
         </counts>
       </usages-collector>
@@ -193,23 +179,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/welcome/Login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="22" column="33" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="33" />
+            <state relative-caret-position="293">
+              <caret line="32" column="37" lean-forward="true" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#175#265#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -218,8 +191,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/assets/style/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+            <state relative-caret-position="400">
+              <caret line="52" column="27" lean-forward="true" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -235,17 +208,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>routes</find>
-      <find>unmount</find>
-      <find>placeholder</find>
-      <find>extends</find>
-      <find>eslint</find>
-      <find>0.0.0.0</find>
-      <find>AsyncComponent</find>
-      <find>baseC</find>
-      <find>@/BaseContext</find>
-      <find>@/assets/base/BaseContext</find>
-      <find>New.</find>
       <find>BaseContext</find>
       <find>domClick</find>
       <find>handlerMenuItemClick</find>
@@ -265,6 +227,17 @@
       <find>sassModuleRegex</find>
       <find>sass</find>
       <find>React</find>
+      <find>ays</find>
+      <find>asyn</find>
+      <find>unmount</find>
+      <find>componentDidMount</find>
+      <find>AsyncComponent</find>
+      <find>loadComponent</find>
+      <find>routesJS</find>
+      <find>react-route-js</find>
+      <find>import routes from '@/web-config/react-route-js';</find>
+      <find>justify-items</find>
+      <find>carouselOnChange</find>
     </findStrings>
     <replaceStrings>
       <replace>this.$</replace>
@@ -308,18 +281,20 @@
         <option value="$PROJECT_DIR$/src/web-config/myReactPrototype.js" />
         <option value="$PROJECT_DIR$/src/assets/base/BaseContext.js" />
         <option value="$PROJECT_DIR$/src/views/business/test/App3.js" />
-        <option value="$PROJECT_DIR$/src/views/welcome/Menus.js" />
         <option value="$PROJECT_DIR$/src/views/welcome/Routes.js" />
-        <option value="$PROJECT_DIR$/src/views/welcome/App.js" />
         <option value="$PROJECT_DIR$/src/views/welcome/New.js" />
         <option value="$PROJECT_DIR$/src/views/welcome/404.js" />
         <option value="$PROJECT_DIR$/src/assets/style/index.less" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/assets/style/index.sass" />
         <option value="$PROJECT_DIR$/config/webpack.config.js" />
-        <option value="$PROJECT_DIR$/src/views/welcome/Login.js" />
         <option value="$PROJECT_DIR$/src/assets/style/index.css" />
         <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/assets/base/AsyncComponent.js" />
+        <option value="$PROJECT_DIR$/src/web-config/react-route-js.js" />
+        <option value="$PROJECT_DIR$/src/views/welcome/Menus.js" />
+        <option value="$PROJECT_DIR$/src/views/welcome/App.js" />
+        <option value="$PROJECT_DIR$/src/views/welcome/Login.js" />
         <option value="$PROJECT_DIR$/src/assets/style/index.scss" />
       </list>
     </option>
@@ -379,6 +354,20 @@
               <item name="-react-management-system" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="-react-management-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="-react-management-system" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="element" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="-react-management-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="-react-management-system" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="style" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -393,6 +382,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="welcome" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="-react-management-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="-react-management-system" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="web-config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -457,12 +452,20 @@
       <workItem from="1587201762325" duration="812000" />
       <workItem from="1587432598553" duration="13281000" />
       <workItem from="1587454380791" duration="11905000" />
-      <workItem from="1587518117560" duration="8389000" />
+      <workItem from="1587518117560" duration="20303000" />
     </task>
+    <task id="LOCAL-00001" summary="模板路由处理以及sass增加">
+      <created>1587526839208</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587526839208</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76659000" />
+    <option name="totallyTimeSpent" value="88573000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1936" height="1066" extended-state="6" />
@@ -499,6 +502,8 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/react-management-system" />
     </ignored-roots>
+    <MESSAGE value="模板路由处理以及sass增加" />
+    <option name="LAST_COMMIT_MESSAGE" value="模板路由处理以及sass增加" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/react-management-system/package.json" />
@@ -549,25 +554,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/base/AsyncComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/welcome/Main.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/mini-store/lib/connect.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
           <caret line="85" selection-start-line="85" selection-end-line="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/web-config/react-route-js.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -612,46 +603,6 @@
     <entry file="file://$PROJECT_DIR$/src/serviceWorker.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/welcome/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/welcome/Menus.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/welcome/Routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="32" column="71" selection-start-line="32" selection-start-column="71" selection-end-line="32" selection-end-column="71" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/element/New.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/welcome/404.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -693,34 +644,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/welcome/Login.js">
+    <entry file="file://$PROJECT_DIR$/src/assets/style/index.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/element/New.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="22" column="33" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="33" />
+        <state relative-caret-position="443">
+          <caret line="30" column="55" lean-forward="true" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/style/index.css">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/assets/base/AsyncComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-495">
+          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/welcome/Menus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/web-config/react-route-js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="732">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="475">
+          <caret line="31" column="35" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="35" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#175#265#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/welcome/Routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-350">
+          <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/welcome/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/welcome/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="32" column="37" lean-forward="true" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/style/index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        <state relative-caret-position="400">
+          <caret line="52" column="27" lean-forward="true" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
         </state>
       </provider>
     </entry>

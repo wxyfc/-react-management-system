@@ -23,7 +23,8 @@ class thisContext extends BaseContext {
         //     pathname
         // }
         const history = createBrowserHistory ();
-        history.push ( { pathname } );
+        // history.push ( { pathname } );
+        history.replace ( { pathname } )
     }
     
     state = {}
