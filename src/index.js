@@ -31,6 +31,7 @@ ReactDOM.render (
         <Switch>
             <Route exact path="/App" name="App" component={ App } key="App"/>
             <Route exact path="/Login" name="Login" component={ Login } key="Login"/>
+            <Redirect exact to="/Login" from='/'/>
             <Redirect exact to={ { pathname : "/App" , state : { rootFromPathname : window.location.pathname } } } from='/*'/>
             { /*{ ROOT }*/ }
         </Switch>
