@@ -7,23 +7,17 @@ class thisContext extends BaseContext {
     
     constructor ( props ) {
         super ( props )
-        super.post ( 1 , 2 , 3 , 4 )
-    }
-    
-    state = {
-        name : "yun"
+        // super.post ( 1 , 2 , 3 , 4 )
     }
     
     UNSAFE_componentWillMount () {
-        this.$log ( 'render前执行' );
+        // this.$log ( 'render前执行' );
     }
     
     render () {
-        this.$log ( 'render 方法' )
+        // this.$log ( 'render 方法' )
         return (
-            <div>
-                <button onClick={ ( e ) => this.domClick ( e ) }>触发事件</button>
-            </div>
+            <h1>404 </h1>
         )
     }
     
@@ -47,13 +41,6 @@ class thisContext extends BaseContext {
     
     componentDidUpdate () { // 在组件完成渲染后
         this.$log ( '在组件完成更新后立即调用' );
-    }
-    
-    domClick = ( e ) => {
-        e.persist ();
-        this.setState ( {
-            name : 'yun'
-        } )
     }
     
     componentWillUnmount () { // 组件的卸载

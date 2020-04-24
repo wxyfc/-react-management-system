@@ -10,21 +10,19 @@ const { Header , Content , Footer , Sider } = Layout;
 
 class thisContext extends BaseContext {
     // displayName = 'app';
-    defaultPrivateName = 'app'
+    defaultPrivateName = 'app';
     
     constructor ( props ) {
         super ( props )
-        let pathname = "/App2"
-        let state = props.location.state
-        if ( state && state.rootFromPathname != "/" ) {
-            pathname = state.rootFromPathname
+        this.$log ( "App==================location================" , props.location );
+        let pathname = "/App2";
+        let state = props.location.state;
+        if ( state && state.rootFromPathname && state.rootFromPathname != "/" ) {
+            pathname = state.rootFromPathname;
+            let history = createBrowserHistory ();
+            // history.push ( { pathname } );
+            history.replace ( { pathname } );
         }
-        // this.state = {
-        //     pathname
-        // }
-        const history = createBrowserHistory ();
-        // history.push ( { pathname } );
-        history.replace ( { pathname } )
     }
     
     state = {}

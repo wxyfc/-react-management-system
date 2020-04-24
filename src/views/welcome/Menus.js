@@ -2,8 +2,38 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import BaseContext from '@/assets/base/BaseContext';
 import { Button , Layout , Menu , Breadcrumb } from 'antd';
+import routes from '@/web-config/react-route-js';
 
 const { SubMenu } = Menu;
+
+function handlerSubmenu ( forList ) {
+    let list = []
+    forList.forEach ( ( item ) => {
+        if ( item.childRoutes.length > 1 ) {
+            let childRoutes = handlerSubmenu ( item.childRoutes )
+            list.push (
+                <SubMenu key={ item.name } title={ item.name }>
+                    { childRoutes }
+                </SubMenu>
+            )
+        } else if ( item.childRoutes.length == 1 ) {
+            list.push (
+                <Menu.Item key={ item.childRoutes[ 0 ].name }><Link to={ item.childRoutes[ 0 ].path } replace>{ item.childRoutes[ 0 ].name }</Link></Menu.Item>
+            )
+        } else {
+            list.push (
+                <Menu.Item key={ item.name }><Link to={ item.path } replace>{ item.name }</Link></Menu.Item>
+            )
+        }
+    } );
+    return list
+}
+
+let menuList = []
+if ( routes.length > 0 ) {
+    menuList = handlerSubmenu ( routes )
+}
+console.log ( menuList )
 
 class thisContext extends BaseContext {
     // displayName = 'new';
@@ -21,10 +51,7 @@ class thisContext extends BaseContext {
         // this.$log ( 'Menus=render 方法' )
         return (
             <Menu>
-                <SubMenu key="sub4" title="title">
-                    <Menu.Item key="7"><Link to="/App2">App2</Link></Menu.Item>
-                    <Menu.Item key="8"><Link to="/App3">App3</Link></Menu.Item>
-                </SubMenu>
+                { menuList }
             </Menu>
         )
     }
@@ -52,7 +79,7 @@ class thisContext extends BaseContext {
     }
     
     componentWillUnmount () { // 组件的卸载
-        this.$log ( '组件的卸载' )
+        // this.$log ( '组件的卸载' )
     }
 }
 

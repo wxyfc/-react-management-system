@@ -1,7 +1,7 @@
 [
   {
-    "path" : "/App2" ,
-    "name" : "App2" ,
+    "path" : "/App1" ,
+    "name" : "App1" ,
     "component" : "test/App2" ,
     "meta" : {
       "icon" : "el-icon-sugar" ,

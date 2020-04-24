@@ -9,8 +9,7 @@ class thisContext extends BaseContext {
     
     constructor ( props ) {
         super ( props )
-        console.log ( "app3" )
-        super.post ( 1 , 2 , 3 , 4 )
+        // super.post ( 1 , 2 , 3 , 4 )
     }
     
     state = {}
@@ -23,8 +22,8 @@ class thisContext extends BaseContext {
         return (
             <>
                 <Button type="primary" onClick={ this.domClick }>触发事件33333</Button>
-                <Link to="/App">App</Link>
-                <Link to="/App2">App2</Link>
+                <Link to="/App" replace>App</Link>
+                <Link to="/App2" replace>App2</Link>
             </>
         )
     }
@@ -47,7 +46,7 @@ class thisContext extends BaseContext {
     }
     
     domClick = ( e ) => {
-        e.persist ();
+        // e.persist ();
         this.$log ( e );
     }
     

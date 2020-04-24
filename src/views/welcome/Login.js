@@ -1,6 +1,6 @@
-import React from 'react'
+import React , { useState } from 'react'
 import BaseContext from '@/assets/base/BaseContext'
-import { Carousel , AutoComplete , Input , Space } from 'antd';
+import { Carousel , AutoComplete , Input , Space , Button , message } from 'antd';
 
 class thisContext extends BaseContext {
     // displayName = 'new';
@@ -11,16 +11,17 @@ class thisContext extends BaseContext {
     }
     
     state = {
-        name : "yun" ,
+        username : "admin" ,
+        password : "admin" ,
         carouselImgList : [
-            "http://47.94.89.73:8080/zeefile/audio/banner/images/banner/banner1.png" ,
-            "http://47.94.89.73:8080/zeefile/audio/banner/images/banner/banner2.png" ,
-            "http://47.94.89.73:8080/zeefile/audio/banner/images/banner/banner3.png" ,
-            "http://47.94.89.73:8080/zeefile/audio/banner/images/banner/banner4.png" ,
-            "http://47.94.89.73:8080/zeefile/audio/banner/images/banner/banner5.png" ,
-            "http://47.94.89.73:8080/zeefile/audio/banner/images/banner/banner6.png" ,
-            "http://47.94.89.73:8080/zeefile/audio/banner/images/banner/banner7.png" ,
-            "http://47.94.89.73:8080/zeefile/audio/banner/images/banner/banner9.png" ] ,
+            "http://47.94.89.73:8080/zeefile/audio/reactImgBg/bg00.jpg" ,
+            "http://47.94.89.73:8080/zeefile/audio/reactImgBg/bg01.jpg" ,
+            "http://47.94.89.73:8080/zeefile/audio/reactImgBg/bg02.jpg" ,
+            "http://47.94.89.73:8080/zeefile/audio/reactImgBg/bg03.jpg" ,
+            "http://47.94.89.73:8080/zeefile/audio/reactImgBg/bg04.jpg" ,
+            "http://47.94.89.73:8080/zeefile/audio/reactImgBg/bg05.jpg" ,
+            "http://47.94.89.73:8080/zeefile/audio/reactImgBg/bg06.jpg" ] ,
+        autoCompleteChildrenTotal : [ { value : "admin" } , { value : "user" } ] ,
         autoCompleteChildren : []
     }
     
@@ -46,17 +47,24 @@ class thisContext extends BaseContext {
                         </div>
                     </div>
                     <div className="login-item-3">
-                        <div className="login-card app-radius-border">
-                            <Space direction="vertical">
-                                <h1></h1>
-                                <AutoComplete children={ this.state.autoCompleteChildren } onSelect={ this.autoCompleteOnSelect } onSearch={ this.autoCompleteOnSearch }
-                                              onChange={ this.autoCompleteOnChange } allowClear autoFocus/>
-                                <button onClick={ this.domClick }>{ this.state.name }</button>
-                            </Space>
+                        <div className="login-handler-center">
+                            <div className="login-card app-radius-border" onKeyUp={ this.onKeyEnter }>
+                                <Space direction="vertical" size="large">
+                                    <h1 className="login-title">react 后台管理系统</h1>
+                                    <AutoComplete
+                                        value={ this.state.username }
+                                        options={ this.state.autoCompleteChildren }
+                                        placeholder="请输入账号"
+                                        onSelect={ this.autoCompleteOnSelect }
+                                        onSearch={ this.autoCompleteOnSearch }
+                                        onChange={ this.autoCompleteOnChange } allowClear autoFocus/>
+                                    <Input.Password value={ this.state.password } onChange={ this.passwordOnChange } placeholder="请输入密码" allowClear/>
+                                    <Button type="primary" block onClick={ this.loginFun }>登录</Button>
+                                </Space>
+                            </div>
                         </div>
                     </div>
                     <div className="login-item-4"></div>
-                    <div className="login-item-5"></div>
                 </div>
             </React.Fragment>
         )
@@ -84,24 +92,54 @@ class thisContext extends BaseContext {
         // this.$log ( '在组件完成更新后立即调用' );6
     }
     
-    autoCompleteOnSelect = () => {
+    autoCompleteOnSelect = ( password ) => {
+        //自动完成输入框进行选择
+        this.setState ( { password } );
+        this.$log ( "autoCompleteOnSelect" , password );
     }
-    autoCompleteOnSearch = () => {
+    autoCompleteOnSearch = ( username ) => {
+        //自动完成输入框开始搜索
+        let autoCompleteChildren = this.state.autoCompleteChildrenTotal.filter ( e => {
+            if ( username && e.value.includes ( username ) ) {
+                return e
+            }
+        } )
+        this.setState ( { autoCompleteChildren } );
+        this.$log ( "autoCompleteOnSearch" , autoCompleteChildren );
     }
-    autoCompleteOnChange = () => {
+    autoCompleteOnChange = ( username ) => {
+        //自动完成输入框正在输入
+        this.setState ( { username } );
+        this.$log ( "autoCompleteOnChange" , username );
+    }
+    passwordOnChange = ( e ) => {
+        this.setState ( { password : e.target.value } );
+        this.$log ( "autoCompleteOnSelect" , e.target.value );
     }
     carouselOnChange = ( e , ee , eee ) => {
-        console.log ( e , ee , eee )
+        //轮播图切换
     }
-    domClick = ( e ) => {
+    onKeyEnter = ( e ) => {
         // e.persist ();
-        this.setState ( {
-            name : 'yun1'
-        } )
+        //判断键盘按下enter键
+        if ( e.keyCode == 13 ) {
+            this.loginFun ();
+        }
+    }
+    loginFun = () => {
+        let { username , password } = this.state;
+        if ( username && password && username == password ) {
+            this.$log ( "登录" );
+            this.props.history.replace ( { pathname : "/App" , state : { rootFromPathname : "/App2" } } )
+            // this.props.history.replace ( { pathname : "/App" } )
+        } else {
+            // message.open ( { content : "你输入的指定是有点问题!" , duration : 1000 } )
+            message.error ( "你输入的指定是有点问题!" , 1000 )
+        }
     }
     
     componentWillUnmount () { // 组件的卸载
-        this.$log ( '组件的卸载' )
+        // this.$log ( '组件的卸载' )
     }
 }
 

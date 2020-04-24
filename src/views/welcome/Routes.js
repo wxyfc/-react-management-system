@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter , Route , Switch , Redirect , Link } from "react-router-dom";
 import BaseContext from '@/assets/base/BaseContext'
 import routes from '@/web-config/react-route-js';
+import { createBrowserHistory } from 'history';
 
 let ROOT = [];
 const routesForEach = item => {
@@ -14,7 +15,6 @@ const routesForEach = item => {
 const pushROOT = item => {
     ROOT.push ( <Route path={ item.path } name={ item.name } component={ item.component } key={ item.name }/> )
 }
-routes.forEach ( routesForEach );
 
 class thisContext extends BaseContext {
     // displayName = 'new';
@@ -29,8 +29,12 @@ class thisContext extends BaseContext {
     }
     
     render () {
-        // this.$log ( 'ROOT=render 方法' )
-        return ( <Switch>{ ROOT } <Redirect exact to="/404" from='/*'/> </Switch> )
+        if ( routes.length > 0 ) {
+            routes.forEach ( routesForEach );
+            return ( <Switch>{ ROOT } </Switch> )
+        } else {
+            return ( <Switch></Switch> )
+        }
     }
     
     componentDidMount () {
@@ -56,7 +60,7 @@ class thisContext extends BaseContext {
     }
     
     componentWillUnmount () { // 组件的卸载
-        this.$log ( '组件的卸载' )
+        // this.$log ( '组件的卸载' )
     }
 }
 
