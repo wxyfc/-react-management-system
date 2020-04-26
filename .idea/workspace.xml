@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23737993-5e8c-4079-82da-c24ed5bad14b" name="默认更改列表" comment="登录页轮播图适配">
-      <change afterPath="$PROJECT_DIR$/src/assets/base/AsyncHComponent.js" afterDir="false" />
+    <list default="true" id="23737993-5e8c-4079-82da-c24ed5bad14b" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/style/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/style/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/business/test/App2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/business/test/App2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/business/test/App3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/business/test/App3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/welcome/404.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/welcome/404.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/welcome/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/welcome/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/welcome/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/welcome/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/welcome/Menus.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/welcome/Menus.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/welcome/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/welcome/Routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/web-config/react-route-js.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/web-config/react-route-js.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/web-config/routes.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/web-config/routes.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -124,12 +112,12 @@
     <session id="788514524">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
-          <entry key="project.open.time.0" value="4" />
+          <entry key="project.closed" value="9" />
+          <entry key="project.open.time.0" value="5" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -165,7 +153,7 @@
           <entry key="less" value="7" />
           <entry key="sass" value="27" />
           <entry key="scss" value="1516" />
-          <entry key="txt" value="54" />
+          <entry key="txt" value="65" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -175,7 +163,7 @@
           <entry key="JSON" value="55" />
           <entry key="JavaScript" value="3739" />
           <entry key="Less" value="7" />
-          <entry key="PLAIN_TEXT" value="54" />
+          <entry key="PLAIN_TEXT" value="65" />
           <entry key="SCSS" value="1516" />
           <entry key="Sass" value="27" />
         </counts>
@@ -183,44 +171,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/welcome/Login.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="132" column="12" lean-forward="true" selection-start-line="132" selection-start-column="12" selection-end-line="132" selection-end-column="105" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/welcome/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="23" column="45" lean-forward="true" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="63" column="31" lean-forward="true" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -349,6 +300,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -367,24 +319,10 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="-react-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="-react-management-system" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="welcome" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="-react-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="-react-management-system" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="web-config" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -447,7 +385,8 @@
       <workItem from="1587518117560" duration="26267000" />
       <workItem from="1587604796258" duration="23486000" />
       <workItem from="1587635009050" duration="2567000" />
-      <workItem from="1587690686601" duration="23527000" />
+      <workItem from="1587690686601" duration="23628000" />
+      <workItem from="1587866034949" duration="1359000" />
     </task>
     <task id="LOCAL-00001" summary="模板路由处理以及sass增加">
       <created>1587526839208</created>
@@ -470,17 +409,23 @@
       <option name="project" value="LOCAL" />
       <updated>1587613292823</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="调整递归路由">
+      <created>1587727233723</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587727233723</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144117000" />
+    <option name="totallyTimeSpent" value="145577000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19296375" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19189766" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="调试" order="0" />
@@ -498,7 +443,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Terminal" order="3" weight="0.53411514" />
+      <window_info anchor="right" id="Terminal" order="3" weight="0.52398723" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18869936" />
@@ -537,7 +482,8 @@
     <MESSAGE value="模板路由处理以及sass增加" />
     <MESSAGE value="登录页grid布局规划样式处理" />
     <MESSAGE value="登录页轮播图适配" />
-    <option name="LAST_COMMIT_MESSAGE" value="登录页轮播图适配" />
+    <MESSAGE value="调整递归路由" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整递归路由" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/react-management-system/package.json" />
@@ -639,9 +585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -670,9 +613,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -694,9 +634,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -704,9 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-          <folding>
-            <element signature="e#96#208#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -714,9 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="605">
           <caret line="35" column="24" lean-forward="true" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -738,9 +669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
           <caret line="132" column="12" lean-forward="true" selection-start-line="132" selection-start-column="12" selection-end-line="132" selection-end-column="105" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -748,19 +676,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
           <caret line="23" column="45" lean-forward="true" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="63" column="31" lean-forward="true" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="243">
+          <caret line="65" column="24" lean-forward="true" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
         </state>
       </provider>
     </entry>
