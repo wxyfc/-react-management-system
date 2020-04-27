@@ -2,17 +2,25 @@ import React from 'react'
 import BaseContext from '@/assets/base/BaseContext'
 import { Button } from 'antd'
 import { Link } from 'react-router-dom';
+import { store } from 'redux';
 
 class thisContext extends BaseContext {
-    // displayName = 'app3';
-    defaultPrivateName = 'app3'
+    // displayName = 'app';
+    defaultPrivateName = 'app2'
     
     constructor ( props ) {
         super ( props )
         // super.post ( 1 , 2 , 3 , 4 )
+        this.state = store.getState ();
+        store.subscribe ( this.StoreChange )
     }
     
     state = {}
+    StoreChange = () => {
+        this.setState ( store.getState () );
+        console.log ( "store发生改变了" )
+        // 感知store发生变化之后，从store里获取最新的数据，然后进行设置
+    };
     
     UNSAFE_componentWillMount () {
     }
@@ -21,9 +29,8 @@ class thisContext extends BaseContext {
         
         return (
             <>
-                <Button type="primary" onClick={ this.domClick }>触发事件33333</Button>
-                <Link to="/App" replace>App</Link>
-                <Link to="/App2" replace>App2</Link>
+                <Button type="primary" onClick={ this.domClick }>测试</Button>
+                <Link to="/Welcome" replace>Welcome</Link>
             </>
         )
     }
@@ -48,6 +55,7 @@ class thisContext extends BaseContext {
     domClick = ( e ) => {
         // e.persist ();
         this.$log ( e );
+        store.dispatch ( { type : "TEST_DIS" , value : { ttt : 1111 , rrr : 222 } } );
     }
     
     componentWillUnmount () { // 组件的卸载

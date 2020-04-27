@@ -5,6 +5,7 @@ import { createBrowserHistory } from 'history';
 import Menus from './Menus';
 import Routes from './Routes';
 import { Layout } from 'antd';
+import { localStorageGetItem } from '@/assets/util/index';
 
 const { Header , Content , Footer , Sider } = Layout;
 
@@ -15,14 +16,11 @@ class thisContext extends BaseContext {
     constructor ( props ) {
         super ( props )
         this.$log ( "App==================location================" , props.location );
-        let pathname = "/App2";
-        let state = props.location.state;
-        if ( state && state.rootFromPathname && state.rootFromPathname != "/" ) {
-            pathname = state.rootFromPathname;
-            let history = createBrowserHistory ();
-            // history.push ( { pathname } );
-            history.replace ( { pathname } );
-        }
+        let pathname = localStorageGetItem ( "rootFromPathname" ) || "/Test";
+        console.log ( pathname )
+        let history = createBrowserHistory ();
+        // history.push ( { pathname } );
+        history.replace ( { pathname } );
     }
     
     state = {}

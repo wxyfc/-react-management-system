@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import BaseContext from '@/assets/base/BaseContext';
 import { Button , Layout , Menu , Breadcrumb } from 'antd';
 import routes from '@/web-config/react-route-js';
+import { localStorageSetItem } from '@/assets/util/index';
 
 const { SubMenu } = Menu;
 
@@ -12,17 +13,17 @@ function handlerSubmenu ( forList ) {
         if ( item.childRoutes.length > 1 ) {
             let childRoutes = handlerSubmenu ( item.childRoutes )
             list.push (
-                <SubMenu key={ item.name } title={ item.name }>
+                <SubMenu key={ item.name } title={ item.meta.title }>
                     { childRoutes }
                 </SubMenu>
             )
         } else if ( item.childRoutes.length == 1 ) {
             list.push (
-                <Menu.Item key={ item.childRoutes[ 0 ].name }><Link to={ item.childRoutes[ 0 ].path } replace>{ item.childRoutes[ 0 ].name }</Link></Menu.Item>
+                <Menu.Item key={ item.childRoutes[ 0 ].name }><Link to={ item.childRoutes[ 0 ].path } replace>{ item.childRoutes[ 0 ].meta.title }</Link></Menu.Item>
             )
         } else {
             list.push (
-                <Menu.Item key={ item.name }><Link to={ item.path } replace>{ item.name }</Link></Menu.Item>
+                <Menu.Item key={ item.name }><Link to={ item.path } replace>{ item.meta.title }</Link></Menu.Item>
             )
         }
     } );
@@ -33,7 +34,6 @@ let menuList = []
 if ( routes.length > 0 ) {
     menuList = handlerSubmenu ( routes )
 }
-console.log ( menuList )
 
 class thisContext extends BaseContext {
     // displayName = 'new';
@@ -50,10 +50,14 @@ class thisContext extends BaseContext {
     render () {
         // this.$log ( 'Menus=render 方法' )
         return (
-            <Menu>
+            <Menu onClick={ this.menuItemClick }>
                 { menuList }
             </Menu>
         )
+    }
+    
+    menuItemClick = ( { key } ) => {
+        localStorageSetItem ( "rootFromPathname" , key )
     }
     
     componentDidMount () {

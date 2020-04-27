@@ -1,6 +1,7 @@
 import React , { useState } from 'react'
 import BaseContext from '@/assets/base/BaseContext'
 import { Carousel , AutoComplete , Input , Space , Button , message } from 'antd';
+import { localStorageSetItem } from '@/assets/util/index';
 
 class thisContext extends BaseContext {
     // displayName = 'new';
@@ -130,7 +131,8 @@ class thisContext extends BaseContext {
         let { username , password } = this.state;
         if ( username && password && username == password ) {
             this.$log ( "登录" );
-            this.props.history.replace ( { pathname : "/App" , state : { rootFromPathname : "/App2" } } )
+            localStorageSetItem ( "rootFromPathname" , "/Test" );
+            this.props.history.replace ( { pathname : "/App" } )
             // this.props.history.replace ( { pathname : "/App" } )
         } else {
             // message.open ( { content : "你输入的指定是有点问题!" , duration : 1000 } )

@@ -1,29 +1,32 @@
 [
   {
-    "path" : "/App1" ,
-    "name" : "App1" ,
-    "component" : "test/App2" ,
+    "path" : "/Test" ,
+    "name" : "Test" ,
+    "component" : "test/Test" ,
     "meta" : {
       "icon" : "el-icon-sugar" ,
+      "title" : "测试" ,
       "intercept" : true ,
       "role" : [ 5233 , 5232 , 5231 , 5230 ]
     } ,
     "childRoutes" : [
       {
-        "path" : "/App2" ,
-        "name" : "App2" ,
-        "component" : "test/App2" ,
+        "path" : "/Test" ,
+        "name" : "Test" ,
+        "component" : "test/Test" ,
         "meta" : {
           "icon" : "el-icon-sugar" ,
+          "title" : "测试" ,
           "intercept" : true ,
           "role" : [ 5233 , 5232 , 5231 , 5230 ]
         }
       } , {
-        "path" : "/App3" ,
-        "name" : "App3" ,
-        "component" : "test/App3" ,
+        "path" : "/Welcome" ,
+        "name" : "Welcome" ,
+        "component" : "test/Welcome" ,
         "meta" : {
           "icon" : "el-icon-sugar" ,
+          "title" : "欢迎" ,
           "intercept" : true ,
           "role" : [ 5233 , 5232 , 5231 , 5230 ]
         }
